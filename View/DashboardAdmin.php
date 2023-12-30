@@ -80,29 +80,6 @@ session_destroy();
             text-decoration: none;
             cursor: pointer;
         }
-
-        .material-icons-outlined {
-            font-family: 'Material Symbols Outlined';
-            font-weight: normal;
-            font-style: normal;
-            font-size: 24px;
-            line-height: 1;
-            display: inline-block;
-            text-transform: none;
-            letter-spacing: normal;
-            word-wrap: normal;
-            white-space: nowrap;
-            direction: ltr;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-somoothing: grayscale;
-        }
-
-        .boton1 {
-            width: 100px;
-            height: 30px;
-            font-size: 55%;
-            margin-left: 750px;
-        }
     </style>
 </head>
 
@@ -121,37 +98,66 @@ session_destroy();
                 <h2 href="#" class="block text-white">admin <br>
                     Administrador</h2>
                 <hr>
-                <h2 class="text-center text-white">Menu Administrador</h2>
-                <a href="#" class="block text-white" onclick="toggleDashboard('dashboard-permisos')">Permisos</a>
-                <a href="#" class="block text-white" onclick="toggleDashboard('dashboard-maestros')">Maestros</a>
-                <a href="#" class="block text-white" onclick="toggleDashboard('dashboard-alumnos')">Alumnos</a>
-                <a href="#" class="block text-white" onclick="toggleDashboard('dashboard-clases')">Clases</a>
             </nav>
         </div>
-        <container>
-            <div class="ml-5 inline-block p-4 h-20 mt-2 shadow-md rounded-md">
-                <h2 class="text-xl font-semibold text-gray-700">Bienvenido</h2>
-                <p class="text-gray-600">Selecciona la acción que quieras realizar en las pestañas del menú de la izquierda
-                </p>
+        <container class="container mx-auto max-w-4xl">
+            <div class="flex justify-center items-center">
+                <div class="ml-5 inline-block p-4 h-20 mt-2 shadow-md rounded-md">
+                    <h2 class="text-xl font-semibold text-gray-700">Bienvenido</h2>
+                    <p class="text-gray-600">Selecciona la acción que quieras realizar en el panel de la parte de abajo</p>
+                </div>
             </div>
 
-            <div class="container mx-auto max-w-3xl">
-                <div class="w-full lg:w-6/12 p-5 mt-10 lg:mt-0">
-                    <div class="bg-white shadow-md p-6 rounded-lg">
-                        <h2 class="text-2xl font-bold mb-5">Admin Panel</h2>
-                        <ul class="space-y-3">
-                            <li class="bg-gray-100 p-2 rounded-lg">Admin</li>
-                            <li class="bg-gray-100 p-2 rounded-lg">Administrador</li>
-                        </ul>
-                        <p class="text-gray-600 mt-5">Email: admin@admin </p>
-                        <div class="mt-10 space-y-3">
-                            <a href="#" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg">Dashboard</a>
-                           <a href="../index.php" class="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-lg">Sign out</a>
+            <div class="container mx-auto max-w-4xl">
+                <div class="flex items-center justify-center">
+                    <div class="w-full lg:w-6/12 p-5 mt-10 lg:mt-0">
+                        <div class="bg-white shadow-md p-6 rounded-lg w-full">
+                            <h2 class="text-2xl font-bold mb-5">Admin Panel</h2>
+                            <ul class="space-y-3">
+                                <li class="bg-gray-100 p-2 rounded-lg">Admin</li>
+                                <li class="bg-gray-100 p-2 rounded-lg">Administrador</li>
+                            </ul>
+                            <p class="text-gray-600 mt-5">Email: admin@admin </p>
+                            <div class="mt-10 space-y-3">
+                                <a href="#" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg">Dashboard</a>
+                                <a href="../index.php" class="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-lg">Sign out</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <div class="table grid grid-rows-4 grid-cols-2 gap-4">
+                <div class="cell aspect-ratio-16/9 bg-white shadow-md p-6 rounded-lg">Comentarios</div>
+                <div class="cell aspect-ratio-16/9 bg-white shadow-md p-6 rounded-lg">Maestros</div>
+                <div class="cell aspect-ratio-16/9 bg-white shadow-md p-6 rounded-lg">Alumnos</div>
+                <div class="cell aspect-ratio-16/9 bg-white shadow-md p-6 rounded-lg">Clases</div>
+            </div>
         </container>
+
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Dashboard</h2>
+             
+            </div>
+        </div>
+        <script>
+      
+            let btn = document.querySelector(".bg-blue-500");
+            let modal = document.getElementById("myModal");
+
+          
+            btn.addEventListener("click", function() {
+                modal.style.display = "block";
+            });
+
+          
+            let close = document.querySelector(".close");
+            close.addEventListener("click", function() {
+                modal.style.display = "none";
+            });
+        </script>
 </body>
 
 </html>
