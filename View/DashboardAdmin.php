@@ -126,28 +126,32 @@ session_destroy();
                 <a href="#" class="block text-white" onclick="toggleDashboard('dashboard-maestros')">Maestros</a>
                 <a href="#" class="block text-white" onclick="toggleDashboard('dashboard-alumnos')">Alumnos</a>
                 <a href="#" class="block text-white" onclick="toggleDashboard('dashboard-clases')">Clases</a>
-                <a href="#" class="block text-white" onclick="cerrarSesion()">Cerrar sesión</a>
             </nav>
         </div>
-        <div class="ml-5 inline-block p-4 h-20 mt-2 shadow-md rounded-md">
-            <h2 class="text-xl font-semibold text-gray-700">Bienvenido</h2>
-            <p class="text-gray-600">Selecciona la acción que quieras realizar en las pestañas del menú de la izquierda
-            </p>
-
-
-            <div id="dashboard-alumnos" class="p-6 min-h-screen" style="display: none;">
-                <h1 id="dashboard-title" class="text-xl font-semibold text-gray-700">Lista de alumnos</h1>
-                <div class="ml-5 inline-block p-8 h-50 mt-2 shadow-md rounded-md">
-
-                    <p>Informacion de alumnos
-
-                        <button id="openModalBtn" class="boton1 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-3 rounded">
-                            Agregar Alumnos</button>
-
-                    </p>
-                </div>
-
+        <container>
+            <div class="ml-5 inline-block p-4 h-20 mt-2 shadow-md rounded-md">
+                <h2 class="text-xl font-semibold text-gray-700">Bienvenido</h2>
+                <p class="text-gray-600">Selecciona la acción que quieras realizar en las pestañas del menú de la izquierda
+                </p>
             </div>
+
+            <div class="container mx-auto max-w-3xl">
+                <div class="w-full lg:w-6/12 p-5 mt-10 lg:mt-0">
+                    <div class="bg-white shadow-md p-6 rounded-lg">
+                        <h2 class="text-2xl font-bold mb-5">Admin Panel</h2>
+                        <ul class="space-y-3">
+                            <li class="bg-gray-100 p-2 rounded-lg">Admin</li>
+                            <li class="bg-gray-100 p-2 rounded-lg">Administrador</li>
+                        </ul>
+                        <p class="text-gray-600 mt-5">Email: admin@admin </p>
+                        <div class="mt-10 space-y-3">
+                            <a href="#" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg">Dashboard</a>
+                           <a href="../index.php" class="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-lg">Sign out</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </container>
 </body>
 
 </html>
