@@ -10,6 +10,7 @@
     <style>
         .zoom {
             transform: scale(2.5);
+            margin-left: 10px;
         }
     </style>
 </head>
