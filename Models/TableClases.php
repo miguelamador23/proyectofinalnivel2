@@ -13,9 +13,7 @@
     </style>
 </head>
 <body class="flex justify-center items-center h-screen bg-gray-100">
-
-<div class="bg-white rounded-lg p-4" style="margin-top: 10px; max-width: 600px;">
-    <table class='display center-table'>
+    <table class='display center-table bg-white rounded-lg p-4' style="margin-top: 10px; max-width: 600px;">
         <tr>
             <th class='w-1/6 text-left'>#</th>
             <th class='w-1/6 text-left'>Clase</th>
@@ -42,7 +40,7 @@
         }
         ?>
     </table>
-</div>
+
 
 </body>
 </html>
