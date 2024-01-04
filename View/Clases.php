@@ -96,6 +96,12 @@
     </div>
     <!-- navbar -->
 
+    <!-- table -->
+    <?php
+        include('../Models/TableClases.php');
+        ?>
+    <!-- table -->
+
 
 </body>
 
