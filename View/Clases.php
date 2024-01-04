@@ -52,7 +52,7 @@
             <li class="text-gray-300">
             </li>
         </ul>
-        <a class="hidden lg:inline-block py-2 px-6 bg-blue-500 hover:bg-red-600 text-sm text-white font-bold rounded-xl transition duration-200"  href="../index.php">Cerrar Sesion</a>
+        <a class="hidden lg:inline-block py-2 px-6 bg-blue-500 hover:bg-red-600 text-sm text-white font-bold rounded-xl transition duration-200" href="../index.php">Cerrar Sesion</a>
     </nav>
     <div class="navbar-menu relative z-50 hidden">
         <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
@@ -88,9 +88,6 @@
                     <a class="block px-4 py-3 mb-3 leading-loose text-xs text-center font-semibold leading-none bg-gray-50 hover:bg-gray-100 rounded-xl" href="#">Sign in</a>
                     <a class="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-blue-600 hover:bg-blue-700  rounded-xl" href="#">Sign Up</a>
                 </div>
-                <p class="my-4 text-xs text-center text-gray-400">
-                    <span>Copyright © 2021</span>
-                </p>
             </div>
         </nav>
     </div>
@@ -98,9 +95,79 @@
 
     <!-- table -->
     <?php
-        include('../Models/TableClases.php');
-        ?>
+    include('../Models/TableClases.php');
+    ?>
     <!-- table -->
+
+    <!-- botones -->
+    <div class="text-center mt-1">
+        <button class="bg-white rounded py-2 px-4 mx-auto mt-10" id="agregarClaseBtn">Agregar clase</button>
+
+        <div class="main-modal fixed w-full h-100 inset-0 z-50 overflow-hidden flex justify-center items-center animated fadeIn faster" style="background: rgba(0,0,0,.7);" id="modalContainer">
+            <!-- Contenido del modal -->
+            <div class="border border-teal-500 shadow-lg modal-container bg-white w-11/12 md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto">
+                <div class="modal-content py-4 text-left px-6">
+                    <!--Title-->
+                    <div class="flex justify-between items-center pb-3">
+                        <p class="text-2xl font-bold">Editar clase</p>
+                        <div class="modal-close cursor-pointer z-50">
+                        </div>
+                    </div>
+                    <!--Body-->
+                    <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
+                        <div class="mt-2">
+                            <p class="text-sm text-gray-500">
+                                Nombre de la Materia
+                            </p>
+                            <input id="materiaInput" type="text" class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm mt-1 block w-full" placeholder="Ciencias Ambientales">
+                            <p class="mt-2 text-sm text-gray-500">
+                                Maestro Asignado
+                            </p>
+                            <input id="maestroInput" type="text" class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm mt-1 block w-full" placeholder="Loria McAw">
+                        </div>
+                        <!--Footer-->
+                        <div class="flex justify-end pt-2">
+                            <button class="focus:outline-none modal-close px-4 bg-gray-400 p-3 rounded-lg text-black hover:bg-gray-300">Cancel</button>
+                            <button id="guardarButton" type="button" class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-blue-600 text-base font-medium text-white hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 sm:ml-3 sm:w-auto sm:text-sm">
+                                Guardar cambios
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    const modal = document.querySelector('#modalContainer');
+                    const closeButton = document.querySelectorAll('.modal-close');
+                    const agregarClaseBtn = document.querySelector('#agregarClaseBtn');
+
+                    const modalClose = () => {
+                        modal.classList.remove('fadeIn');
+                        modal.classList.add('fadeOut');
+                        setTimeout(() => {
+                            modal.style.display = 'none';
+                        }, 500);
+                    }
+
+                    for (let i = 0; i < closeButton.length; i++) {
+                        const elements = closeButton[i];
+                        elements.onclick = (e) => modalClose();
+                    }
+
+                    agregarClaseBtn.addEventListener('click', () => {
+                        modal.classList.remove('fadeOut');
+                        modal.classList.add('fadeIn');
+                        modal.style.display = 'flex';
+                    });
+
+                    // Ocultar el modal al cargar la página
+                    modal.style.display = 'none';
+                });
+            </script>
+        </div>
+    </div>
+    <!-- botones -->
 
 
 </body>
@@ -145,4 +212,5 @@
         }
     });
 </script>
+
 </html>
