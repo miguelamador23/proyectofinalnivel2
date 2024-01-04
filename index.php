@@ -1,97 +1,166 @@
-<?php
-require_once 'Models/Database.php';
-session_start();
-
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $email = $_POST['email'];
-    $password = $_POST['password'];
-
-    $sql = "SELECT id FROM usuarios WHERE Correo = ? AND Contraseña = ?";
-    $stmt = $mysqli->prepare($sql);
-
-    if (!$stmt) {
-        echo "Error en la preparación de la consulta: " . $mysqli->error;
-        exit();
-    }
-
-    $stmt->bind_param("ss", $email, $password);
-    $result = $stmt->execute();
-
-    if ($result) {
-        $stmt->bind_result($el_id_del_usuario);
-        $stmt->fetch();
-        $stmt->close();
-
-        if ($email === 'admin@admin' && $password === 'admin') {
-            $_SESSION['user_id'] = $el_id_del_usuario;
-            header('Location: View/DashboardAdmin.php');
-            exit();
-        } elseif ($email === 'maestro@maestro' && $password === 'maestro') {
-            $_SESSION['user_id'] = $el_id_del_usuario;
-            header("Location: View/DashboardMaestro.php");
-            exit();
-        } else {
-            echo "Error de usuario incorrecto. Por favor, verifica tus credenciales.";
-            exit();
-        }
-    } else {
-        echo "Error al ejecutar la consulta: " . $stmt->error;
-        exit();
-    }
-}
-?>
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <style>
-        body {
-            background-color: rgba(255, 245, 210, 255);
-        }
 
-        .container {
-            position: relative;
-        }
+    <!-- CSS TailWindcss CLI -->
+    <link href="../css/output.css" rel="stylesheet">
 
-        .image {
-            position: absolute;
-            top: 15%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 350px;
-            height: 350px;
-            z-index: -1;
-        }
-    </style>
+    <title>University | Funval</title>
 </head>
 
 <body>
-    <img src="../assets/logo.jpg" alt="" class="image">
-    <div class="container">
-        <div class="flex justify-center items-center h-screen">
-            <div class="bg-white shadow-lg rounded-lg p-8">
-                <h2 class="text-2xl mb-4">Bienvenido ingresa con tu cuenta</h2>
-                <form id="loginForm" method="post" action="index.php">
-                    <div class="mb-4">
-                        <input type="email"  name="email" id="email" class="border border-gray-300 rounded-md p-2 w-full"
-                            placeholder="Correo" required />
-                    </div>
-                    <div class="mb-4">
-                        <input type="password" name="password" id="password" class="border border-gray-300 rounded-md p-2 w-full"
-                            placeholder="Contraseña" required />
-                    </div>
-                    <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-md">Iniciar sesión</button>
-                </form>
-            </div>
-        </div>
-    </div>
+    <?php
+    require_once($_SERVER["DOCUMENT_ROOT"] . "/Controllers/LoginController.php");
+    require_once($_SERVER["DOCUMENT_ROOT"] . "/Controllers/PermisoController.php");
+    require_once($_SERVER["DOCUMENT_ROOT"] . "/Controllers/MaestroController.php");
+    require_once($_SERVER["DOCUMENT_ROOT"] . "/Controllers/ClaseController.php");
+    require_once($_SERVER["DOCUMENT_ROOT"] . "/Controllers/HomeController.php");
 
-   
+    // ENRUTADOR
+    $loginController = new LoginController();
+    $permisoController = new PermisoController();
+    $maestroController = new MaestroController();
+    $claseController = new ClaseController();
+    $homeController = new HomeController();
+
+    // Dividimos la ruta por el signo "?" para no leer los query params. Ejem: /clientes?id=1
+    $route = explode("?", $_SERVER["REQUEST_URI"]);
+
+    $method = $_SERVER["REQUEST_METHOD"];
+
+
+    if ($method === "POST") {
+        switch ($route[0]) {
+            case '/login':
+                $loginController->login($_POST["email"], $_POST["password"]);
+                break;
+
+                // Opciones correspondiente a los Permisos de los Usuarios
+            case '/permisos/create':
+                $permisoController->store($_POST);
+                break;
+
+            case '/permisos/update':
+                // var_dump($_POST);
+                $permisoController->update($_POST);
+                break;
+
+                // Opciones correspondiente a la gestion de los Maestros
+            case '/maestros/delete':
+                $maestroController->delete($_POST["id"]);
+                break;
+
+            case '/maestros/create':
+                $maestroController->store($_POST);
+                break;
+
+            case '/maestros/update':
+                $maestroController->update($_POST);
+                break;
+
+                // Opciones correspondiente a la gestion de los Alumnos
+            case '/alumnos/delete':
+                $alumnoController->delete($_POST["id"]);
+                break;
+
+            case '/alumnos/create':
+                $alumnoController->store($_POST);
+                break;
+
+            case '/alumnos/update':
+                $alumnoController->update($_POST);
+                break;
+
+
+                // Opciones correspondiente a la gestion de las Clases
+            case '/clases/delete':
+                $claseController->delete($_POST["id"]);
+                break;
+
+            case '/clases/create':
+                $claseController->store($_POST);
+                break;
+
+            case '/clases/update':
+                $claseController->update($_POST);
+                break;
+
+                // Opciones por default de no encontrar ninguna de las anteriores
+            default:
+                echo "NO ENCONTRAMOS LA RUTA.";
+                break;
+        }
+    }
+
+    if ($method === "GET") {
+        switch ($route[0]) {
+            case '/index.php':
+                $loginController->index();
+                break;
+
+            case '/dashboard':
+                $loginController->dashboard();
+                break;
+
+                // Opciones correspondiente a los Permisos de Usuarios
+            case '/permisos':
+                $permisoController->index();
+                break;
+
+            case '/permisos/edit':
+                $permisoController->edit($_GET["id"]);
+                break;
+
+                // Opciones correspondiente a la gestion de los Maestros
+            case '/maestros':
+                $maestroController->index();
+                break;
+
+            case '/maestros/edit':
+                $maestroController->edit($_GET["id"]);
+                break;
+
+            case '/maestros/create':
+                $maestroController->create();
+                break;
+
+                // Opciones correspondiente a la gestion de los Alumnos
+            case '/alumnos':
+                $alumnoController->index();
+                break;
+
+            case '/alumnos/edit':
+                $alumnoController->edit($_GET["id"]);
+                break;
+
+            case '/alumnos/create':
+                $alumnoController->create();
+                break;
+
+
+                // Opciones correspondiente a la gestion de las Clases
+            case '/clases':
+                $claseController->index();
+                break;
+
+            case '/clases/edit':
+                $claseController->edit($_GET["id"]);
+                break;
+
+            case '/clases/create':
+                $claseController->create();
+                break;
+
+                // Opciones por default de no encontrar ninguna de las anteriores
+            default:
+                echo "NO ENCONTRAMOS LA RUTA.";
+                break;
+        }
+    }
+    ?>
 </body>
 
 </html>
