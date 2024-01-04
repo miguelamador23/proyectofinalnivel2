@@ -12,6 +12,7 @@
     <style>
         .zoom {
             transform: scale(2.5);
+            margin-left: 10px;
         }
 
         .dataTables_wrapper select,
@@ -59,6 +60,7 @@
             background: #667eea !important;
             border: 1px solid transparent;
         }
+
         table.dataTable.no-footer {
             border-bottom: 1px solid #e2e8f0;
             margin-top: 0.75em;
@@ -68,7 +70,7 @@
         table.dataTable.dtr-inline.collapsed>tbody>tr>td:first-child:before,
         table.dataTable.dtr-inline.collapsed>tbody>tr>th:first-child:before {
             background-color: #667eea !important;
-          
+
         }
 
         .container {
@@ -80,7 +82,7 @@
 <body class="bg-blue-500">
     <!-- navbar -->
     <nav class="relative px-4 py-4 flex justify-between items-center bg-white">
-        <a class="text-3xl font-bold leading-none" href="#">
+        <a class="text-3xl font-bold leading-none" href="../View/DashboardAdmin.php">
             <img class="h-16 zoom" alt="logo" viewBox="0 0 10240 10240" src="../assets/logo1.png">
         </a>
         <div class="lg:hidden">
@@ -150,69 +152,22 @@
                     <a class="block px-4 py-3 mb-3 leading-loose text-xs text-center font-semibold leading-none bg-gray-50 hover:bg-gray-100 rounded-xl" href="#">Sign in</a>
                     <a class="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-blue-600 hover:bg-blue-700  rounded-xl" href="#">Sign Up</a>
                 </div>
-                <p class="my-4 text-xs text-center text-gray-400">
-                    <span>Copyright © 2021</span>
-                </p>
             </div>
         </nav>
     </div>
     <!-- navbar -->
 
-    <!--Tabla-->
-    <div class="container w-full md:w-4/5 xl:w-3/5  mx-auto px-2">
-        <!--Card-->
-        <div id='recipients' class="p-8 mt-6 lg:mt-0 rounded shadow bg-white">
-            <table id="example" class="stripe hover" style="width:100%; padding-top: 1em;  padding-bottom: 1em;">
-                <thead>
-                    <tr>
-                        <th data-priority="1">Name</th>
-                        <th data-priority="2">Position</th>
-                        <th data-priority="3">Office</th>
-                        <th data-priority="4">Age</th>
-                        <th data-priority="5">Start date</th>
-                        <th data-priority="6">Salary</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Tiger Nixon</td>
-                        <td>System Architect</td>
-                        <td>Edinburgh</td>
-                        <td>61</td>
-                        <td>2011/04/25</td>
-                        <td>$320,800</td>
-                    </tr>
-
-                    <tr>
-                        <td>Donna Snider</td>
-                        <td>Customer Support</td>
-                        <td>New York</td>
-                        <td>27</td>
-                        <td>2011/01/25</td>
-                        <td>$112,000</td>
-                    </tr>
-                </tbody>
-
-            </table>
-
-
-        </div>
-        <!--/Card-->
+    <div class="bg-white-500" style="text-align: center;">
+        <?php
+        include('../Models/Table.php');
+        ?>
     </div>
-    <!--/container-->
-
-
-    <!--Tabla-->
-
-
 </body>
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-
 <!--Datatables -->
 <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
 <script src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
-
 
 <script>
     document.addEventListener('DOMContentLoaded', function() {
