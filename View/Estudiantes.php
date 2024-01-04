@@ -116,7 +116,7 @@
             <li class="text-gray-300">
             </li>
         </ul>
-        <a class="hidden lg:inline-block py-2 px-6 bg-blue-500 hover:bg-red-600 text-sm text-white font-bold rounded-xl transition duration-200" href="#">Cerrar Sesion</a>
+        <a class="hidden lg:inline-block py-2 px-6 bg-blue-500 hover:bg-red-600 text-sm text-white font-bold rounded-xl transition duration-200" href="../index.php">Cerrar Sesion</a>
     </nav>
     <div class="navbar-menu relative z-50 hidden">
         <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>

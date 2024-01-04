@@ -18,7 +18,7 @@
 <body class="bg-blue-500">
     <!-- navbar -->
     <nav class="relative px-4 py-4 flex justify-between items-center bg-white">
-        <a class="text-3xl font-bold leading-none" href="#">
+        <a class="text-3xl font-bold leading-none" href="../View/DashboardAdmin.php">
             <img class="h-16 zoom" alt="logo" viewBox="0 0 10240 10240" src="../assets/logo1.png">
         </a>
         <div class="lg:hidden">
@@ -52,7 +52,7 @@
             <li class="text-gray-300">
             </li>
         </ul>
-        <a class="hidden lg:inline-block py-2 px-6 bg-blue-500 hover:bg-red-600 text-sm text-white font-bold rounded-xl transition duration-200" href="#">Cerrar Sesion</a>
+        <a class="hidden lg:inline-block py-2 px-6 bg-blue-500 hover:bg-red-600 text-sm text-white font-bold rounded-xl transition duration-200" href="../index.php">Cerrar Sesion</a>
     </nav>
     <div class="navbar-menu relative z-50 hidden">
         <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>

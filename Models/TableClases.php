@@ -5,11 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .center-table {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
 </head>
 <body class="flex justify-center items-center h-screen bg-gray-100">
 
-<div class="bg-white rounded-lg p-4" style="margin-top: 10px;">
-    <table class='display mx-auto' style="margin-top: 10px;">
+<div class="bg-white rounded-lg p-4" style="margin-top: 10px; max-width: 600px;">
+    <table class='display center-table'>
         <tr>
             <th class='w-1/6 text-left'>#</th>
             <th class='w-1/6 text-left'>Clase</th>
