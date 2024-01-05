@@ -57,81 +57,6 @@
                                 </a>
                             </li>
                             <li class="relative px-2 py-1 ">
-                                <a class="inline-flex items-center w-full text-sm font-semibold text-white transition-colors duration-150 cursor-pointer hover:text-green-500" href='/permisos'>
-
-                                    <svg width="24px" height="24px" viewBox="0 0 48.00 48.00" xmlns="http://www.w3.org/2000/svg" fill="#ffffff" stroke="#ffffff" stroke-width="0.00048000000000000007">
-                                        <g id="SVGRepo_bgCarrier" stroke-width="0" transform="translate(0,0), scale(1)"></g>
-                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.576"></g>
-                                        <g id="SVGRepo_iconCarrier">
-                                            <g id="Layer_2" data-name="Layer 2">
-                                                <g id="invisible_box" data-name="invisible box">
-                                                    <rect width="48" height="48" fill="none"></rect>
-                                                </g>
-                                                <g id="Layer_7" data-name="Layer 7">
-                                                    <g>
-                                                        <path d="M25.1,41H4a2,2,0,0,1-2-2V31.1l1-.6A25.6,25.6,0,0,1,16,27a26.7,26.7,0,0,1,7.5,1.1,21.2,21.2,0,0,0-.5,4.4A18.4,18.4,0,0,0,25.1,41Z"></path>
-                                                        <path d="M16,23a9,9,0,1,0-9-9A9,9,0,0,0,16,23Z"></path>
-                                                        <path d="M46,34.1V31.9L42.4,31l-.5-1.1,2-3.2-1.6-1.6-3.2,2L38,26.6,37.1,23H34.9L34,26.6l-1.1.5-3.2-2-1.6,1.6,2,3.2L29.6,31l-3.6.9v2.2l3.6.9.5,1.1-2,3.2,1.6,1.6,3.2-2,1.1.5.9,3.6h2.2l.9-3.6,1.1-.5,3.2,2,1.6-1.6-2-3.2.5-1.1ZM36,36a3,3,0,1,1,3-3A2.9,2.9,0,0,1,36,36Z"></path>
-                                                    </g>
-                                                </g>
-                                            </g>
-                                        </g>
-                                    </svg>
-                                    <span class="ml-4">PERMISOS</span>
-                                </a>
-                            </li>
-                            <li class="relative px-2 py-1 ">
-                                <a class="inline-flex items-center w-full text-sm font-semibold text-white transition-colors duration-150 cursor-pointer hover:text-green-500" href="/maestros">
-                                    <svg fill="#ffffff" height="24px" width="24px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 511.999 511.999" xml:space="preserve" stroke="#ffffff" stroke-width="5.1199900000000005">
-                                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                        <g id="SVGRepo_iconCarrier">
-                                            <g>
-                                                <g>
-                                                    <path d="M302.195,11.833H13.049C5.842,11.833,0,17.675,0,24.882v214.289c0,7.207,5.842,13.049,13.049,13.049h283.839 l-34.352-21.329c-2.247-1.396-4.282-3.002-6.109-4.768H26.097V37.93h263.049v126.703c4.01,0.847,7.943,2.39,11.625,4.677 l14.473,8.986V24.882C315.244,17.675,309.402,11.833,302.195,11.833z"></path>
-                                                </g>
-                                            </g>
-                                            <g>
-                                                <g>
-                                                    <path d="M216.857,134.337c-4.352-3.43-10.665-2.685-14.097,1.668c-3.432,4.353-2.686,10.665,1.668,14.097l44.279,34.914 c0.63-1.371,1.34-2.719,2.156-4.034c2.883-4.643,6.649-8.401,10.94-11.206L216.857,134.337z"></path>
-                                                </g>
-                                            </g>
-                                            <g>
-                                                <g>
-                                                    <circle cx="419.71" cy="81.405" r="37.557"></circle>
-                                                </g>
-                                            </g>
-                                            <g>
-                                                <g>
-                                                    <path d="M511.33,173.609c-0.118-23.528-19.355-42.67-42.884-42.67H450.26c-17.831,46.242-11.329,29.381-22.507,58.37l4.709-23.724 c0.346-1.744,0.067-3.555-0.79-5.113l-7.381-13.424l6.551-11.914c0.454-0.826,0.438-1.829-0.041-2.64 c-0.479-0.811-1.352-1.308-2.293-1.308h-17.96c-0.942,0-1.813,0.497-2.293,1.308s-0.495,1.815-0.041,2.64l6.537,11.889 l-7.367,13.4c-0.873,1.589-1.147,3.438-0.77,5.211l5.438,23.675c-3.119-8.087-21.08-52.728-23.255-58.37h-17.83 c-23.529,0-42.766,19.141-42.884,42.67c-0.098,19.565-0.016,3.179-0.17,33.884l-36.702-22.787 c-8.501-5.28-19.674-2.667-24.953,5.836c-5.279,8.503-2.666,19.675,5.836,24.954l64.219,39.873 c12.028,7.47,27.609-1.167,27.68-15.304c0.036-7.091,0.292-57.809,0.334-66.275c0.013-2.092,1.714-3.776,3.805-3.769 c2.089,0.007,3.779,1.703,3.779,3.794c-0.018,87.323-0.394,111.735-0.394,304.606c0,12.01,9.736,21.746,21.746,21.746 s21.746-9.736,21.746-21.746V304.604h9.388v173.817c0,12.01,9.736,21.746,21.746,21.746s21.746-9.736,21.746-21.746l0.008-304.612 c0-1.981,1.604-3.589,3.586-3.595c1.981-0.006,3.595,1.594,3.605,3.577l0.669,133.132c0.05,9.977,8.154,18.03,18.119,18.03 c0.031,0,0.062,0,0.094,0c10.007-0.05,18.081-8.205,18.03-18.212L511.33,173.609z"></path>
-                                                </g>
-                                            </g>
-                                        </g>
-                                    </svg>
-                                    <span class="ml-4">MAESTROS</span>
-                                </a>
-                            </li>
-                            <li class="relative px-2 py-1 ">
-                                <a class="inline-flex items-center w-full text-sm font-semibold text-white transition-colors duration-150 cursor-pointer hover:text-green-500" href="/alumnos">
-                                    <svg height="24px" width="24px" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#ffffff">
-                                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                        <g id="SVGRepo_iconCarrier">
-                                            <style type="text/css">
-                                                .st0 {
-                                                    fill: #ffffff;
-                                                }
-                                            </style>
-                                            <g>
-                                                <path class="st0" d="M505.837,180.418L279.265,76.124c-7.349-3.385-15.177-5.093-23.265-5.093c-8.088,0-15.914,1.708-23.265,5.093 L6.163,180.418C2.418,182.149,0,185.922,0,190.045s2.418,7.896,6.163,9.627l226.572,104.294c7.349,3.385,15.177,5.101,23.265,5.101 c8.088,0,15.916-1.716,23.267-5.101l178.812-82.306v82.881c-7.096,0.8-12.63,6.84-12.63,14.138c0,6.359,4.208,11.864,10.206,13.618 l-12.092,79.791h55.676l-12.09-79.791c5.996-1.754,10.204-7.259,10.204-13.618c0-7.298-5.534-13.338-12.63-14.138v-95.148 l21.116-9.721c3.744-1.731,6.163-5.504,6.163-9.627S509.582,182.149,505.837,180.418z"></path>
-                                                <path class="st0" d="M256,346.831c-11.246,0-22.143-2.391-32.386-7.104L112.793,288.71v101.638 c0,22.314,67.426,50.621,143.207,50.621c75.782,0,143.209-28.308,143.209-50.621V288.71l-110.827,51.017 C278.145,344.44,267.25,346.831,256,346.831z"></path>
-                                            </g>
-                                        </g>
-                                    </svg>
-                                    <span class="ml-4">ALUMNOS</span>
-                                </a>
-                            </li>
-                            <li class="relative px-2 py-1 ">
                                 <a class="inline-flex items-center w-full text-sm font-semibold text-white transition-colors duration-150 cursor-pointer hover:text-green-500" href="/clases">
                                     <svg fill="#ffffff" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 29.936 29.936" xml:space="preserve" stroke="#ffffff" stroke-width="1.4968">
                                         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -175,84 +100,6 @@
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
                                     </svg>
                                     <span class="ml-4">HOME</span>
-                                </a>
-                            </li>
-                            <li class="relative px-2 py-1" x-data="{ Open : false  }">
-                                <a class="inline-flex items-center justify-between w-full text-base font-semibold transition-colors duration-150 text-gray-500  hover:text-yellow-400 cursor-pointer" x-on:click="Open = !Open" href='/permisos'>
-                                    <span class='inline-flex items-center  text-sm font-semibold text-white hover:text-green-400'>
-                                        <svg width="24px" height="24px" viewBox="0 0 48.00 48.00" xmlns="http://www.w3.org/2000/svg" fill="#ffffff" stroke="#ffffff" stroke-width="0.00048000000000000007">
-                                            <g id="SVGRepo_bgCarrier" stroke-width="0" transform="translate(0,0), scale(1)"></g>
-                                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.576"></g>
-                                            <g id="SVGRepo_iconCarrier">
-                                                <g id="Layer_2" data-name="Layer 2">
-                                                    <g id="invisible_box" data-name="invisible box">
-                                                        <rect width="48" height="48" fill="none"></rect>
-                                                    </g>
-                                                    <g id="Layer_7" data-name="Layer 7">
-                                                        <g>
-                                                            <path d="M25.1,41H4a2,2,0,0,1-2-2V31.1l1-.6A25.6,25.6,0,0,1,16,27a26.7,26.7,0,0,1,7.5,1.1,21.2,21.2,0,0,0-.5,4.4A18.4,18.4,0,0,0,25.1,41Z"></path>
-                                                            <path d="M16,23a9,9,0,1,0-9-9A9,9,0,0,0,16,23Z"></path>
-                                                            <path d="M46,34.1V31.9L42.4,31l-.5-1.1,2-3.2-1.6-1.6-3.2,2L38,26.6,37.1,23H34.9L34,26.6l-1.1.5-3.2-2-1.6,1.6,2,3.2L29.6,31l-3.6.9v2.2l3.6.9.5,1.1-2,3.2,1.6,1.6,3.2-2,1.1.5.9,3.6h2.2l.9-3.6,1.1-.5,3.2,2,1.6-1.6-2-3.2.5-1.1ZM36,36a3,3,0,1,1,3-3A2.9,2.9,0,0,1,36,36Z"></path>
-                                                        </g>
-                                                    </g>
-                                                </g>
-                                            </g>
-                                        </svg>
-                                        <span class="ml-4">PERMISOS</span>
-                                    </span>
-                                </a>
-                            </li>
-                            <li class="relative px-2 py-1" x-data="{ Open : false  }">
-                                <a class="inline-flex items-center justify-between w-full text-base font-semibold transition-colors duration-150 text-gray-500  hover:text-yellow-400 cursor-pointer" href='/maestros' x-on:click="Open = !Open">
-                                    <span class="inline-flex items-center  text-sm font-semibold text-white hover:text-green-400">
-                                        <svg fill="#ffffff" height="24px" width="24px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 511.999 511.999" xml:space="preserve" stroke="#ffffff" stroke-width="5.1199900000000005">
-                                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                            <g id="SVGRepo_iconCarrier">
-                                                <g>
-                                                    <g>
-                                                        <path d="M302.195,11.833H13.049C5.842,11.833,0,17.675,0,24.882v214.289c0,7.207,5.842,13.049,13.049,13.049h283.839 l-34.352-21.329c-2.247-1.396-4.282-3.002-6.109-4.768H26.097V37.93h263.049v126.703c4.01,0.847,7.943,2.39,11.625,4.677 l14.473,8.986V24.882C315.244,17.675,309.402,11.833,302.195,11.833z"></path>
-                                                    </g>
-                                                </g>
-                                                <g>
-                                                    <g>
-                                                        <path d="M216.857,134.337c-4.352-3.43-10.665-2.685-14.097,1.668c-3.432,4.353-2.686,10.665,1.668,14.097l44.279,34.914 c0.63-1.371,1.34-2.719,2.156-4.034c2.883-4.643,6.649-8.401,10.94-11.206L216.857,134.337z"></path>
-                                                    </g>
-                                                </g>
-                                                <g>
-                                                    <g>
-                                                        <circle cx="419.71" cy="81.405" r="37.557"></circle>
-                                                    </g>
-                                                </g>
-                                                <g>
-                                                    <g>
-                                                        <path d="M511.33,173.609c-0.118-23.528-19.355-42.67-42.884-42.67H450.26c-17.831,46.242-11.329,29.381-22.507,58.37l4.709-23.724 c0.346-1.744,0.067-3.555-0.79-5.113l-7.381-13.424l6.551-11.914c0.454-0.826,0.438-1.829-0.041-2.64 c-0.479-0.811-1.352-1.308-2.293-1.308h-17.96c-0.942,0-1.813,0.497-2.293,1.308s-0.495,1.815-0.041,2.64l6.537,11.889 l-7.367,13.4c-0.873,1.589-1.147,3.438-0.77,5.211l5.438,23.675c-3.119-8.087-21.08-52.728-23.255-58.37h-17.83 c-23.529,0-42.766,19.141-42.884,42.67c-0.098,19.565-0.016,3.179-0.17,33.884l-36.702-22.787 c-8.501-5.28-19.674-2.667-24.953,5.836c-5.279,8.503-2.666,19.675,5.836,24.954l64.219,39.873 c12.028,7.47,27.609-1.167,27.68-15.304c0.036-7.091,0.292-57.809,0.334-66.275c0.013-2.092,1.714-3.776,3.805-3.769 c2.089,0.007,3.779,1.703,3.779,3.794c-0.018,87.323-0.394,111.735-0.394,304.606c0,12.01,9.736,21.746,21.746,21.746 s21.746-9.736,21.746-21.746V304.604h9.388v173.817c0,12.01,9.736,21.746,21.746,21.746s21.746-9.736,21.746-21.746l0.008-304.612 c0-1.981,1.604-3.589,3.586-3.595c1.981-0.006,3.595,1.594,3.605,3.577l0.669,133.132c0.05,9.977,8.154,18.03,18.119,18.03 c0.031,0,0.062,0,0.094,0c10.007-0.05,18.081-8.205,18.03-18.212L511.33,173.609z"></path>
-                                                    </g>
-                                                </g>
-                                            </g>
-                                        </svg>
-                                        <span class="ml-4">MAESTROS</span>
-                                    </span>
-                                </a>
-                            </li>
-                            <li class="relative px-2 py-1 ">
-                                <a class="inline-flex items-center w-full text-sm font-semibold text-white transition-colors duration-150 cursor-pointer hover:text-green-500" href="/alumnos">
-                                    <svg height="24px" width="24px" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#ffffff">
-                                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                        <g id="SVGRepo_iconCarrier">
-                                            <style type="text/css">
-                                                .st0 {
-                                                    fill: #ffffff;
-                                                }
-                                            </style>
-                                            <g>
-                                                <path class="st0" d="M505.837,180.418L279.265,76.124c-7.349-3.385-15.177-5.093-23.265-5.093c-8.088,0-15.914,1.708-23.265,5.093 L6.163,180.418C2.418,182.149,0,185.922,0,190.045s2.418,7.896,6.163,9.627l226.572,104.294c7.349,3.385,15.177,5.101,23.265,5.101 c8.088,0,15.916-1.716,23.267-5.101l178.812-82.306v82.881c-7.096,0.8-12.63,6.84-12.63,14.138c0,6.359,4.208,11.864,10.206,13.618 l-12.092,79.791h55.676l-12.09-79.791c5.996-1.754,10.204-7.259,10.204-13.618c0-7.298-5.534-13.338-12.63-14.138v-95.148 l21.116-9.721c3.744-1.731,6.163-5.504,6.163-9.627S509.582,182.149,505.837,180.418z"></path>
-                                                <path class="st0" d="M256,346.831c-11.246,0-22.143-2.391-32.386-7.104L112.793,288.71v101.638 c0,22.314,67.426,50.621,143.207,50.621c75.782,0,143.209-28.308,143.209-50.621V288.71l-110.827,51.017 C278.145,344.44,267.25,346.831,256,346.831z"></path>
-                                            </g>
-                                        </g>
-                                    </svg>
-                                    <span class="ml-4">ALUMNOS</span>
                                 </a>
                             </li>
                             <li class="relative px-2 py-1 ">
@@ -385,9 +232,6 @@
 
                     <div class="grid grid-cols-12 gap-6">
                         <div class="grid grid-cols-12 col-span-12 gap-6 xxl:col-span-9">
-
-
-
                             <div class='col-span-12 mt-5'>
                                 <div class="grid gap-2 grid-cols-1 lg:grid-cols-1">
                                     <div class="bg-white p-4 shadow-lg rounded-lg">
@@ -434,69 +278,68 @@
                                                                 </thead>
                                                                 <tbody class="bg-white divide-y divide-gray-200">
                                                                     <?php
-                                                                    //var_dump($clases);
-                                                                    foreach ($clases as $clase) {
-                                                                        switch ($clase["maestro_nombre"]) {
-                                                                            case Null:
-                                                                                $maestroAsignado = "Sin Asignación";
-                                                                                $estilo = "bg-orange-500 text-white rounded-full px-2 py-0.5";
-                                                                                break;
+                                                                   
+                                                                  
+                                                                    if ($clases !== null) {
+                                                                        foreach ($clases as $clase) {
+                                                                            switch ($clase["maestro_nombre"]) {
+                                                                                case null:
+                                                                                    $maestroAsignado = "Sin Asignación";
+                                                                                    $estilo = "bg-orange-500 text-white rounded-full px-2 py-0.5";
+                                                                                    break;
+                                                                                default:
+                                                                                    $maestroAsignado = $clase["maestro_nombre"];
+                                                                                    $estilo = "";
+                                                                                    break;
+                                                                            }
 
-                                                                            default:
-                                                                                $maestroAsignado = $clase["maestro_nombre"];
-                                                                                $estilo = "";
-                                                                                break;
+                                                                            switch ($clase["inscritos"]) {
+                                                                                case 0:
+                                                                                    $alumnosInscritos = "Sin Alumnos";
+                                                                                    $estilo2 = "bg-orange-100 text-black text-bold rounded-full px-2 py-0.5";
+                                                                                    break;
+                                                                                default:
+                                                                                    $alumnosInscritos = $clase["inscritos"];
+                                                                                    $estilo2 = "";
+                                                                                    break;
+                                                                            }
                                                                         }
-
-                                                                        switch ($clase["inscritos"]) {
-                                                                            case 0:
-                                                                                $alumnosInscritos = "Sin Alumnos";
-                                                                                $estilo2 = "bg-orange-100 text-black text-bold rounded-full px-2 py-0.5";
-                                                                                break;
-
-                                                                            default:
-                                                                                $alumnosInscritos = $clase["inscritos"];
-                                                                                $estilo2 = "";
-                                                                                break;
-                                                                        }
-                                                                    ?>
-                                                                        <tr>
-                                                                            <td class="px-6 py-3 whitespace-no-wrap text-md leading-5">
-                                                                                <p><?= $clase["clase_id"] ?></p>
-                                                                            </td>
-                                                                            <td class="px-6 py-3 whitespace-no-wrap text-md leading-5">
-                                                                                <p><?= $clase["clase_nombre"] ?></p>
-                                                                                <!--<p class="text-xs text-gray-400"><?= $clase["nombre"] ?></p>-->
-                                                                            </td>
-                                                                            <td class="px-6 py-3 whitespace-no-wrap text-md leading-5">
-                                                                                <p class="<?= $estilo ?>"><?= $maestroAsignado ?></p>
-                                                                            </td>
-                                                                            <td class="px-6 py-3 whitespace-no-wrap text-md leading-5">
-                                                                                <p class="<?= $estilo2 ?>"><?= $alumnosInscritos ?></p>
-                                                                            </td>
-
-                                                                            <td class="px-6 py-3 whitespace-no-wrap text-sm leading-5">
-                                                                                <div class="flex space-x-4" id="open-btn">
-                                                                                    <!-- href="/clases/edit?id=<?= $clase["id"] ?>" -->
-                                                                                    <a class="text-blue-500 hover:text-blue-600" href='#'>
-                                                                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
-                                                                                        </svg>
-                                                                                        <p>Edit</p>
-                                                                                    </a>
-                                                                                    </button>
-                                                                                    <a href="#" class="text-red-500 hover:text-red-600">
-                                                                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-1 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
-                                                                                        </svg>
-                                                                                        <p>Delete</p>
-                                                                                    </a>
-                                                                                </div>
-                                                                            </td>
-                                                                        </tr>
-                                                                    <?php
                                                                     }
+                                                                    
                                                                     ?>
+                                                                  <tr>
+                                                                      <td class="px-6 py-3 whitespace-no-wrap text-md leading-5">
+                                                                          <p><?= !empty($clase["clase_id"]) ? $clase["clase_id"] : '' ?></p>
+                                                                      </td>
+                                                                      <td class="px-6 py-3 whitespace-no-wrap text-md leading-5">
+                                                                          <p><?= !empty($clase["clase_nombre"]) ? $clase["clase_nombre"] : '' ?></p>
+                                                                      </td>
+                                                                      <td class="px-6 py-3 whitespace-no-wrap text-md leading-5">
+                                                                          <p class="<?= !empty($estilo) ? $estilo : '' ?>"><?= !empty($maestroAsignado) ? $maestroAsignado : '' ?></p>
+                                                                      </td>
+                                                                      <td class="px-6 py-3 whitespace-no-wrap text-md leading-5">
+                                                                          <p class="<?= !empty($estilo2) ? $estilo2 : '' ?>"><?= !empty($alumnosInscritos) ? $alumnosInscritos : '' ?></p>
+                                                                      </td>
+                                                                      <td class="px-6 py-3 whitespace-no-wrap text-sm leading-5">
+                                                                          <div class="flex space-x-4" id="open-btn">
+                                                                              <a class="text-blue-500 hover:text-blue-600" href='#'>
+                                                                                  <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                                                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+                                                                                  </svg>
+                                                                                  <p>Edit</p>
+                                                                              </a>
+                                                                              <a href="#" class="text-red-500 hover:text-red-600">
+                                                                                  <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-1 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                                                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                                                                                  </svg>
+                                                                                  <p>Delete</p>
+                                                                              </a>
+                                                                          </div>
+                                                                      </td>
+                                                                  </tr>
+                                                                   <?php
+                                                                   
+                                                                   ?>
                                                                 </tbody>
                                                             </table>
 

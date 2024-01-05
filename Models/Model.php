@@ -69,27 +69,28 @@ class Model
      *
      * @return array Arreglo con todos los registro de la tabla.
      */
-    public function allClases()
-    {
-        $queryClases = 'select
-        c.id as clase_id,
-        c.nombre as clase_nombre,
-        u.nombre as maestro_nombre,
-        count(i.alumno_id) as inscritos
-    from
+public function allClases()
+{
+    $queryClases = 'SELECT
+        c.id AS clase_id,
+        c.nombre AS clase_nombre,
+        u.nombre AS maestro_nombre,
+        COUNT(i.alumno_id) AS inscritos
+    FROM
         clases c
-    left join inscripciones i on
+    LEFT JOIN inscripciones i ON
         c.id = i.clase_id
-    left join usuarios u on
+    LEFT JOIN usuarios u ON
         u.clase_id = c.id
-    group by
+    GROUP BY
         c.id,
-        c.nombre';
-        $res = $this->db->query($queryClases);
-        $data = $res->fetch_all(MYSQLI_ASSOC);
+        c.nombre,
+        u.nombre';
+    $res = $this->db->query($queryClases);
+    $data = $res->fetch_all(MYSQLI_ASSOC);
 
-        return $data;
-    }
+    return $data;
+}
 
     /**
      * Método para todos los registros de la tabla.
@@ -179,7 +180,7 @@ class Model
 
             $values = array_values($data);
             //var_dump($data);
-            
+
             $valuesString = implode("', '", $values);
             $query = "insert into {$this->table}($keysString) values ('$valuesString')";
 
@@ -246,7 +247,7 @@ class Model
         return $data;
     }
 
-     /**
+    /**
      * Método para encontrar un dato utilizando la columna, operador y valor.
      *
      * @param string $column Columna de la tabla en la que se quiere buscar.
@@ -261,15 +262,15 @@ class Model
         inner join roles r on r.id = u.rol_id
         where $columnA $operator '$value' and $columnB $operator '$pass'";
 
-                /***
-                *Query anterior abajo, en la cual unia 2 consultas para validar el login en la tabla usuarios o en la tabla maestros
-                *Se volvió a construir la BDD unificando las tablas: alumnos, maestros y usuarios en una sola tabla llamada usuarios
-                *De esta manera la consulta, grabar informacion entre otros, se hace mas practico. Esto segun recomendaciones de los
-                *instructores Funval, particularmente de: Harold Carazas y Diego Huarsaya. Gracias por su apoyo.
+        /***
+         *Query anterior abajo, en la cual unia 2 consultas para validar el login en la tabla usuarios o en la tabla maestros
+         *Se volvió a construir la BDD unificando las tablas: alumnos, maestros y usuarios en una sola tabla llamada usuarios
+         *De esta manera la consulta, grabar informacion entre otros, se hace mas practico. Esto segun recomendaciones de los
+         *instructores Funval, particularmente de: Harold Carazas y Diego Huarsaya. Gracias por su apoyo.
 
-                */
+         */
 
-                /*$query ="select m.id, m.nombre, m.apellido, m.email, m.password, r.rol, u.rol_id from usuarios u
+        /*$query ="select m.id, m.nombre, m.apellido, m.email, m.password, r.rol, u.rol_id from usuarios u
                 inner join maestros m on u.id = m.usuario_id
                 inner join roles r on u.rol_id = r.id
                 where $columnA $operator '$value' and $columnB $operator '$pass'
@@ -278,7 +279,7 @@ class Model
                 inner join alumnos a on us.id = a.usuario_id
                 inner join roles ro on us.rol_id = ro.id
                 where $columnA $operator '$value' and $columnB $operator '$pass'";*/
-                
+
         //var_dump($query);
         $res = $this->db->query("$query");
         //var_dump($res);
@@ -288,4 +289,3 @@ class Model
         return $data;
     }
 }
-?>
